@@ -1,6 +1,9 @@
-*.csv
-*.pdf
-*.jpg
-*.png
-*.DS_Store
-*.venv
+data/*.csv
+output/*.pdf
+cache/images/*
+.DS_Store
+.venv/
+!data/.gitkeep
+!output/.gitkeep
+!cache/.gitkeep
+!cache/images/.gitkeep
