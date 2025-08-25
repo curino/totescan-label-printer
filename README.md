@@ -1,15 +1,16 @@
 # Totescan Label Printer
 
-Generate printable labels (PDF) for Totescan inventory CSV exports.
+The Totescan app is very convenient, but it has limited export/label printing functionalities. This simple Python script allows to 
+generate printable labels (PDF) for Totescan inventory CSV exports. 
 
 ## What it does
-- Reads one or more CSV file(s) from `data/`.
+- Reads one or more CSV file(s) exported from Totescan and placed in  `data/`.
 - Groups rows by `TOTE ID` and builds labels with:
-  - Tote ID (big)
   - Tote Title and Location
+  - Tote ID
   - Optional QR code (uses `QRDATA` if present)
   - List of items with quantities and descriptions
-- Produces a multi-page PDF with one label per tote.
+- Produces 2 multi-page PDF with one label per tote (one PDF includes thumbnails the other is text-only).
  - Shows sub-totes on their parent labels:
    - A brief bullet list of child tote IDs/titles near the top
    - A full section per child with its own items (in both render modes)
