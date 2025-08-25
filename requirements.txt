@@ -1,0 +1,4 @@
+reportlab>=3.6.13
+qrcode[pil]>=7.4.2
+Pillow>=10.0.0
+requests>=2.31.0
